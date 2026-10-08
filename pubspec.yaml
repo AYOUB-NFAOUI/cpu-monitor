@@ -1,0 +1,43 @@
+name: cpu_monitor_temperature
+description: "CPU Monitor - Temperature : surveillez le CPU, le GPU et la température de votre appareil."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  device_info_plus: ^10.1.2
+  percent_indicator: ^4.2.3
+  flutter_overlay_window: ^0.5.0
+  shared_preferences: ^2.3.2
+  battery_plus: ^7.1.1
+  google_mobile_ads: ^9.1.0
+  applovin_max: ^4.6.4
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+# Génère automatiquement les icônes Android/iOS à partir de assets/icon/app_icon.png
+# Commande à lancer une fois les dépendances installées :
+#   flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#1EA05A"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/app_icon.png
